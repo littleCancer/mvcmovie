@@ -32,3 +32,8 @@
 /Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/MvcMovie.csproj.CopyComplete
 /Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/HelloWorld/Index.g.cshtml.cs
 /Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/HelloWorld/Welcome.g.cshtml.cs
+/Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/Movies/Create.g.cshtml.cs
+/Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/Movies/Delete.g.cshtml.cs
+/Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/Movies/Details.g.cshtml.cs
+/Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/Movies/Edit.g.cshtml.cs
+/Users/steva/Workspaces/DotNet/MvcMovie/obj/Debug/netcoreapp2.1/Razor/Views/Movies/Index.g.cshtml.cs
