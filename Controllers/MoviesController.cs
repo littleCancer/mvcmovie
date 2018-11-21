@@ -25,14 +25,39 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string movieGenre, string searchString)
         {
+
+            IQueryable<string> genreQuery = from m in _context.Movie
+                                            orderby m.Genre
+                                            select m.Genre;
             
-            
-            List<Movie> mList = _context.Movie.ToList();
-            Console.WriteLine(mList);
-            Console.Write("dfd");
-            return View(await _context.Movie.ToListAsync());
+            var movies = from m in _context.Movie
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString)) {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+
+            if (!String.IsNullOrEmpty(movieGenre)) {
+                movies = movies.Where(x => x.Genre == movieGenre);
+            }
+
+            var movieGenreVM = new MovieGenreViewModel();
+            movieGenreVM.Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+            movieGenreVM.Movies = await movies.ToListAsync();
+
+            movieGenreVM.SearchString = searchString;
+
+            // return View(await _context.Movie.ToListAsync());
+            // return View(await movies.ToListAsync());
+            return View(movieGenreVM);
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
 
         // GET: Movies/Details/5
