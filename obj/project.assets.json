@@ -12544,23 +12544,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/stevanrakic/.nuget/packages/": {},
+    "/Users/steva/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/stevanrakic/Workspaces/dotnet/movies1/MvcMovie.csproj",
+      "projectUniqueName": "/Users/steva/Workspaces/DotNet/MvcMovie/MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "/Users/stevanrakic/Workspaces/dotnet/movies1/MvcMovie.csproj",
-      "packagesPath": "/Users/stevanrakic/.nuget/packages/",
-      "outputPath": "/Users/stevanrakic/Workspaces/dotnet/movies1/obj/",
+      "projectPath": "/Users/steva/Workspaces/DotNet/MvcMovie/MvcMovie.csproj",
+      "packagesPath": "/Users/steva/.nuget/packages/",
+      "outputPath": "/Users/steva/Workspaces/DotNet/MvcMovie/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/stevanrakic/.nuget/NuGet/NuGet.Config"
+        "/Users/steva/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

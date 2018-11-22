@@ -31,6 +31,8 @@ namespace MvcMovie.Migrations
 
                     b.Property<string>("Title");
 
+                    b.Property<string>("Rating"); 
+
                     b.HasKey("ID");
 
                     b.ToTable("Movie");
